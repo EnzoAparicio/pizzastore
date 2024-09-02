@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "ZT55ieYRAkLcjWbW9ufsExAGg++2f2MaVaTvF2ryosc=",
+  "Source": "PizzaStore",
+  "BasePath": "_content/PizzaStore",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PizzaStore\\wwwroot",
+      "Source": "PizzaStore",
+      "ContentRoot": "C:\\Users\\Administrator\\Downloads\\PizzaStore\\wwwroot\\",
+      "BasePath": "_content/PizzaStore",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\Administrator\\Downloads\\PizzaStore\\wwwroot\\index.html",
+      "SourceId": "PizzaStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Administrator\\Downloads\\PizzaStore\\wwwroot\\",
+      "BasePath": "_content/PizzaStore",
+      "RelativePath": "index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    }
+  ]
+}

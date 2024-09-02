@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Administrator\\Downloads\\PizzaStore\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PizzaStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PizzaStore.props",
+      "PackagePath": "build\\PizzaStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PizzaStore.props",
+      "PackagePath": "buildMultiTargeting\\PizzaStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PizzaStore.props",
+      "PackagePath": "buildTransitive\\PizzaStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

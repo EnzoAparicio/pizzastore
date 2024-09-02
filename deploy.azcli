@@ -1,0 +1,10 @@
+az login
+
+az group create --name "PizzaStoreResourceGroup" --location "brazilsouth"
+
+az appservice plan create --name "PizzaStorePlan" --resource-group "PizzaStoreResourceGroup" --sku F1 --location brazilsouth 
+
+az webapp create --name "PizzaStoreWebApp" --resource-group "PizzaStoreResourceGroup" --plan "PizzaStorePlan" --runtime "dotnet:8"
+
+az webapp deploy --resource-group "PizzaStoreResourceGroup" --name "PizzaStoreWebApp" --src-path "C:\Users\Administrator\Downloads\PizzaStore.zip" --type zip --async
+
