@@ -6,5 +6,7 @@ az appservice plan create --name "PizzaStorePlan" --resource-group "PizzaStoreRe
 
 az webapp create --name "PizzaStoreWebApp" --resource-group "PizzaStoreResourceGroup" --plan "PizzaStorePlan" --runtime "dotnet:8"
 
-az webapp deploy --resource-group "PizzaStoreResourceGroup" --name "PizzaStoreWebApp" --src-path "C:\Users\Administrator\Downloads\PizzaStore.zip" --type zip --async
+az webapp create --name PizzaStoreWebApp --resource-group PizzaStoreResourceGroup --plan PizzaStorePlan --deployment-local-git
+
+az webapp deployment source config --branch main --manual-integration --name PizzaStoreWebApp --repo-url https://github.com/EnzoAparicio/pizzastore.git --resource-group PizzaStoreResourceGroup
 
