@@ -1,12 +1,12 @@
 az login
 
-az group create --name "PizzaStoreResourceGroup" --location "brazilsouth"
+az group create --name PizzaStoreResourceGroup -l brazilsouth
 
-az appservice plan create --name "PizzaStorePlan" --resource-group "PizzaStoreResourceGroup" --sku F1 --location brazilsouth 
+az appservice plan create --name PizzaStorePlan --resource-group PizzaStoreResourceGroup --sku F1
 
-az webapp create --name "PizzaStoreWebApp" --resource-group "PizzaStoreResourceGroup" --plan "PizzaStorePlan" --runtime "dotnet:8"
+az webapp create --name PizzaStoreWebApp --resource-group PizzaStoreResourceGroup --plan PizzaStorePlan --runtime dotnet:8
 
-az webapp create --name PizzaStoreWebApp --resource-group PizzaStoreResourceGroup --plan PizzaStorePlan --deployment-local-git
+az webapp deployment source config --name PizzaStoreWebApp --resource-group PizzaStoreResourceGroup --repo-url https://github.com/EnzoAparicio/pizzastore.git --branch main --manual-integration
 
-az webapp deployment source config --branch main --manual-integration --name PizzaStoreWebApp --repo-url https://github.com/EnzoAparicio/pizzastore.git --resource-group PizzaStoreResourceGroup
+az webapp deploy --resource-group PizzaStoreResourceGroup --name PizzaStoreWebApp --src-path "C:\Users\Administrator\Downloads\PizzaStore.zip" --type zip --async
 
